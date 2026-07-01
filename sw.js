@@ -1,11 +1,19 @@
 /* Service worker — offline app shell for the AP SE inspection app */
-const CACHE = 'ap-defect-v1';
+const CACHE = 'ap-defect-v2';
 const ASSETS = [
   'index.html',
   'manifest.webmanifest',
   'icon-192.png',
   'icon-512.png',
-  'icon-maskable-512.png'
+  'icon-maskable-512.png',
+  'fonts/AP-Light300.ttf',
+  'fonts/AP-Regular400.ttf',
+  'fonts/AP-Italic400.ttf',
+  'fonts/AP-Medium500.ttf',
+  'fonts/AP-MediumItalic500.ttf',
+  'fonts/AP-Bold700.ttf',
+  'fonts/AP-BoldItalic700.ttf',
+  'fonts/AP-Condensed300.ttf'
 ];
 
 self.addEventListener('install', (e) => {
